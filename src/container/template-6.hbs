@@ -64,19 +64,21 @@
 </div>
 {{/with}}
 
+
 {{#with expirience}}
 <div class="experience">
     <div class="experience_title">{{title}}</div>
     <div class="experience_badge">
         <span class="badge_text">{{badge}}</span>
     </div>
-
-    {{#each list}}
-    <div class="experience_cards">
-        <div class="cards_name">{{name}}</div>
-        <p class="cards_details">{{details}}</p>
+    <div class="experience_block">
+        {{#each list}}
+        <div class="experience_cards">
+            <div class="cards_name">{{name}}</div>
+            <p class="cards_details">{{details}}</p>
+        </div>
+        {{/each}}
     </div>
-    {{/each}}
 </div>
 {{/with}}
 
