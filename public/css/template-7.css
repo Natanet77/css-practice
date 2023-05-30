@@ -1,0 +1,17 @@
+.header {
+  top: 12px;
+}
+.brandName {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 8px 12px;
+  gap: 10px;
+
+  width: 56px;
+  height: 30px;
+
+  background: #885ffb;
+  border-radius: 10px;
+  color: #ffffff;
+}
