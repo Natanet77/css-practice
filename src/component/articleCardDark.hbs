@@ -1,0 +1,14 @@
+{{#each articles}}
+<div class="articles_block">
+    {{#with this}}
+
+    <img src="{{photo}}" class="articles_image" alt="{{id}}">
+
+    <div class="articles_name">{{name}}
+    </div>
+    <p class="articles_description">{{description}}</p>
+    {{/with}}
+
+    <button class="button btn_read">Read All</button>
+</div>
+{{/each}}

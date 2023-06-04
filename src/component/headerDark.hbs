@@ -1,20 +1,27 @@
-{{#with header}}
 <div class="header">
-    <div class="brandName">{{brandName}}</div>
-    <div class="userOnline">Users online: {{userOnline}}</div>
+    {{#with header}}
 
-    {{#with ad}}
+    {{!-- <div class="logo_user"> --}}
+        <div class="logo">{{brandName}}</div>
+        <div class="user_online">Users online: {{userOnline}}</div>
+        {{!--
+    </div> --}}
+
     <div class="ad">
-        <div class="text">{{text}}</div>
-        <a href="{{url}}">Ad</a>
-    </div>
-    {{/with}}
+        <span class="span_ad">Ad</span>
 
-    <nav class="links">
+        {{#with ad}}
+        <p class="ad_text">{{text}}: </p>
+        <a href="{{url}}" class="ad_url">{{url}}</a>
+        {{/with}}
+
+    </div>
+
+    <nav class="header_links">
         {{#each links}}
-        <a href="{{url}}">{{text}}</a>
+        <a href="{{url}}" class="nav_links">{{text}}</a>
         {{/each}}
     </nav>
 
+    {{/with}}
 </div>
-{{/with}}
