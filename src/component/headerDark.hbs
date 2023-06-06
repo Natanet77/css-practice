@@ -4,6 +4,12 @@
     <div class="logo">{{brandName}}</div>
     <div class="user_online">Users online: {{userOnline}}</div>
 
+    <nav class="header_links">
+        {{#each links}}
+        <a href="{{url}}" class="nav_links">{{text}}</a>
+        {{/each}}
+    </nav>
+
     <div class="ad">
         <span class="span_ad">Ad</span>
 
@@ -14,11 +20,7 @@
 
     </div>
 
-    <nav class="header_links">
-        {{#each links}}
-        <a href="{{url}}" class="nav_links">{{text}}</a>
-        {{/each}}
-    </nav>
+
 
     {{/with}}
 </div>
