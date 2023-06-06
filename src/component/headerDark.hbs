@@ -1,26 +1,26 @@
 <div class="header">
     {{#with header}}
-
-    <div class="logo">{{brandName}}</div>
-    <div class="user_online">Users online: {{userOnline}}</div>
-
-    <nav class="header_links">
-        {{#each links}}
-        <a href="{{url}}" class="nav_links">{{text}}</a>
-        {{/each}}
-    </nav>
-
-    <div class="ad">
-        <span class="span_ad">Ad</span>
-
-        {{#with ad}}
-        <p class="ad_text">{{text}}: </p>
-        <a href="{{url}}" class="ad_url">{{url}}</a>
-        {{/with}}
-
+    <div class="header_nav">
+        <div class="logo">{{brandName}}</div>
+        <nav class="header_links">
+            {{#each links}}
+            <a href="{{url}}" class="nav_links">{{text}}</a>
+            {{/each}}
+        </nav>
     </div>
 
 
+    <div class="ad">
+        <span class="span_ad">Ad</span>
+        {{#with ad}}
+        <div class="text_url">
+            <p class="ad_text">{{text}}: </p>
+            <a href="{{url}}" class="ad_url">{{url}}</a>
+        </div>
+
+        {{/with}}
+        <div class="user_online">Users online: {{userOnline}}</div>
+    </div>
 
     {{/with}}
 </div>

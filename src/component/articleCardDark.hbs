@@ -3,7 +3,8 @@
     {{#with this}}
 
     <img src="{{photo}}" class="articles_image" alt="{{id}}">
-    <div class="articles_new">{{#if isNew}}New{{/if}}</div>
+    {{!-- <div class="articles_new">{{#if isNew}}New{{/if}}</div> --}}
+    {{#if isNew}}<div class="articles_new">New</div>{{/if}}
     <div class="articles_name">{{name}}</div>
     <p class="articles_description">{{description}}</p>
 
