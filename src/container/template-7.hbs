@@ -1,7 +1,40 @@
-<div class="page">
-    <div class="page_content">
-        <div class="page block">
-            {{> headerDark}}
-        </div>
+<header class="page_block">
+    {{> headerDark}}
+
+</header>
+
+<div class="page_block">
+    {{#with hero}}
+    <div class="hero">
+        <div class="title">{{title}}</div>
+        <p class="description">{{description}}</p>
+        <a class="button" href="{{button.url}}">{{button.text}}</a>
     </div>
+    {{/with}}
 </div>
+
+<div class="page_block">
+    {{#with about}}
+    <div class="about">
+        <div class="heading">{{heading}}</div>
+        <div class="info">{{info}}</div>
+    </div>
+    {{/with}}
+</div>
+
+<main class="page_block">
+    <div class="title_btn">
+        <div class="title_articles">Our Articles</div>
+        <button class="btn_view">View All</button>
+    </div>
+
+    <div class="articles">
+        {{> articleCardDark}}
+    </div>
+
+
+</main>
+<footer class="footer">
+    {{> footerDark}}
+
+</footer>
