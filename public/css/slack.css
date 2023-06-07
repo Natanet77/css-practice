@@ -261,7 +261,7 @@ body {
   }
 
   .features_grid_3 > .feat_card {
-    grid-row: 1 / 2;
+    grid-row: 1 / 3;
   }
 }
 
