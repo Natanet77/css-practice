@@ -182,6 +182,7 @@ hr {
     flex-direction: column;
     align-items: flex-start;
     gap: var(--spacing-5);
+    height: 70%;
   }
 
   .payment--info {
@@ -233,6 +234,15 @@ hr {
     align-items: flex-start;
     padding: 0px;
     gap: 24px;
+  }
+
+  .choose--item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+    width: 100%;
   }
 }
 
